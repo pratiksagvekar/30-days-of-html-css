@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub API App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>GitHub User Info</h1>
+        <input type="text" id="username" placeholder="Enter GitHub Username">
+        <button onclick="getUserData()">Search</button>
+
+        <div id="userProfile">
+            <img id="avatar" src="" alt="User Avatar">
+            <h2 id="name"></h2>
+            <p id="bio"></p>
+            <p id="location"></p>
+            <a id="githubLink" href="" target="_blank">View GitHub Profile</a>
+        </div>
+
+        <div id="repoList">
+            <h3>Repositories</h3>
+            <ul id="repos"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
