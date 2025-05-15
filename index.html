@@ -1,31 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GitHub API App</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Better Stack</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+    <nav class="navbar">
+        <div class="nav-container">
+          <div class="logo">Better Stack</div>
+          <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+  <header class="hero">
     <div class="container">
-        <h1>GitHub User Info</h1>
-        <input type="text" id="username" placeholder="Enter GitHub Username">
-        <button onclick="getUserData()">Search</button>
-
-        <div id="userProfile">
-            <img id="avatar" src="" alt="User Avatar">
-            <h2 id="name"></h2>
-            <p id="bio"></p>
-            <p id="location"></p>
-            <a id="githubLink" href="" target="_blank">View GitHub Profile</a>
-        </div>
-
-        <div id="repoList">
-            <h3>Repositories</h3>
-            <ul id="repos"></ul>
-        </div>
+        <img src="images/logo.png" alt="Better Stack Logo" class="hero-logo" />
+      <h1>Better Stack</h1>
+      <p>Reliability is the ultimate feature.</p>
+      <a href="#get-started" class="cta-button">Get Started</a>
     </div>
-
-    <script src="script.js"></script>
+  </header>
 </body>
 </html>

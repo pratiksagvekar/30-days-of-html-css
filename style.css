@@ -1,95 +1,110 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f7fc;
+/* Reset some default styles */
+* {
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    background: linear-gradient(135deg, #000000, #1a001a);
     height: 100vh;
-}
+  }
 
-.container {
-    text-align: center;
-    background-color: white;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  .hero-logo {
+    width: 120px;
+    height: auto;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(166, 74, 201, 0.3);
+  }
+
+  .navbar {
     width: 100%;
-    max-width: 600px;
-}
-
-h1 {
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-input {
-    padding: 10px;
-    font-size: 16px;
-    width: 80%;
-    margin: 10px 0;
-    border-radius: 5px;
-    border: 1px solid #ddd;
-}
-
-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
-
-#userProfile {
-    margin-top: 20px;
-}
-
-#avatar {
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    margin-bottom: 20px;
-}
-
-#name {
-    font-size: 1.5em;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 1rem 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    backdrop-filter: blur(5px);
+  }
+  
+  .nav-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
     font-weight: bold;
-}
-
-#bio, #location {
-    font-size: 1.2em;
-    color: #555;
-}
-
-#githubLink {
-    display: inline-block;
-    font-size: 1.2em;
-    margin-top: 10px;
+    background: linear-gradient(45deg, #a64ac9, #6a1b9a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .nav-links a {
+    color: #ccc;
     text-decoration: none;
-    color: #007bff;
-}
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #a64ac9;
+  }
+  
+  
+  /* Hero Section */
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #0f0f0f, #1a001a);
+    padding: 2rem;
+  }
+  
+  .hero h1 {
+    font-size: 4rem;
+    background: linear-gradient(45deg, #a64ac9, #6a1b9a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 1rem;
+  }
+  
+  .hero p {
+    font-size: 2rem;
+    color: #ccc;
+  }
 
-#repoList {
-    margin-top: 30px;
-    text-align: left;
-}
-
-#repoList ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-#repoList ul li {
-    background-color: #f9f9f9;
-    margin: 5px 0;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
+  .cta-button {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 0.75rem 1.5rem;
+    background: linear-gradient(45deg, #a64ac9, #6a1b9a);
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .cta-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(166, 74, 201, 0.5);
+  }
+  
