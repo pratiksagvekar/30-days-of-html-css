@@ -1,4 +1,4 @@
-/* Reset some default styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -6,105 +6,157 @@
   }
   
   body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #fff;
-    background: linear-gradient(135deg, #000000, #1a001a);
-    height: 100vh;
-  }
-
-  .hero-logo {
-    width: 120px;
-    height: auto;
-    margin-bottom: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 0 15px rgba(166, 74, 201, 0.3);
-  }
-
-  .navbar {
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 1rem 2rem;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 100;
-    backdrop-filter: blur(5px);
+    font-family: 'Segoe UI', sans-serif;
+  background-color: #F3F4F6; 
+  color: #111827;
   }
   
-  .nav-container {
-    max-width: 1200px;
-    margin: auto;
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  header {
+    background-color: white;
+    border-bottom: 1px solid #E5E7EB;
+  }
+  
+  .nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 1rem 0;
   }
   
   .logo {
     font-size: 1.5rem;
     font-weight: bold;
-    background: linear-gradient(45deg, #a64ac9, #6a1b9a);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #0070f3;
   }
   
-  .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 1.5rem;
-  }
-  
-  .nav-links a {
-    color: #ccc;
+  nav a {
+    margin-left: 1.5rem;
     text-decoration: none;
+    color: #333;
     font-weight: 500;
-    transition: color 0.3s;
+    transition: color 0.2s;
   }
   
-  .nav-links a:hover {
-    color: #a64ac9;
+  nav a:hover {
+    color: #0070f3;
   }
   
-  
-  /* Hero Section */
-  .hero {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    height: 100vh;
-    background: linear-gradient(135deg, #0f0f0f, #1a001a);
-    padding: 2rem;
+  .search-filter {
+    padding: 2rem 0;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
   }
   
-  .hero h1 {
-    font-size: 4rem;
-    background: linear-gradient(45deg, #a64ac9, #6a1b9a);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  .search-box {
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
     margin-bottom: 1rem;
   }
   
-  .hero p {
-    font-size: 2rem;
-    color: #ccc;
-  }
-
-  .cta-button {
-    display: inline-block;
-    margin-top: 1.5rem;
-    padding: 0.75rem 1.5rem;
-    background: linear-gradient(45deg, #a64ac9, #6a1b9a);
-    color: white;
-    font-weight: 600;
-    border: none;
-    border-radius: 8px;
-    text-decoration: none;
-    font-size: 1rem;
-    transition: transform 0.2s, box-shadow 0.2s;
+  .filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
   }
   
-  .cta-button:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 15px rgba(166, 74, 201, 0.5);
+  .filters button {
+    padding: 0.5rem 1rem;
+    background-color: white;
+    color: #0070f3;
+    border: 1px solid #0070f3;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+  }
+  
+  .filters button:hover {
+    background-color: #0070f3;
+    color: white;
+  }
+  
+  .cards-section {
+    padding: 2rem 0;
+  }
+  
+  .cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+  }
+  
+  .card {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+  }
+  
+  .card-body {
+    padding: 1rem;
+  }
+  
+  .card-body h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .card-body p {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 0.2rem 0;
+  }
+  
+  .tag {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.3rem 0.7rem;
+    font-size: 0.75rem;
+    border-radius: 999px;
+    font-weight: 500;
+  }
+  
+  .online {
+    background-color: #e0f3ff;
+    color: #0070f3;
+  }
+  
+  .inperson {
+    background-color: #ffe9d5;
+    color: #ff7b00;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    nav a {
+      margin-left: 1rem;
+    }
+  
+    .filters {
+      flex-direction: column;
+      align-items: flex-start;
+    }
   }
   
